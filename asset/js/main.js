@@ -3,11 +3,21 @@ var mail = prompt ("Scrivi la tua Mail");
 console.log(mail);
 
 //lista delle mail che possono accedere
-var lista = ["vale","fili","marco","lori"];
+var lista = ["vale@jsmail","fili@jsmail","marco@jsmail","lori@jsmail"];
+
+mail=false
 
 //verifica accesso mail
-for (var mail = 0; mail < lista.length; mail++) {
-    console.log(lista);
+for (i = 0; i < lista.length; i++) {
+    if (mail == lista[i]);
+    mail=true
+    console.log(mail);
+}
+
+if (mail == lista[i]) {
+    document.getElementById("accesso").innerHTML = "la tua mail e stata verificata correttamente!";
+}else{
+    document.getElementById("accesso").innerHTML = " la tua mail non e in elenco!";
 }
 
 
